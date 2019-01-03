@@ -1,0 +1,22 @@
+.home {
+    width: 100%;
+    padding: 30px 0;
+    &__h2 {
+        @include heading(30);
+        &--color {
+            color: $colorAccent;
+        }
+    }
+    &__h3 {
+        @include heading(24);
+    }
+    &__text {
+        margin: 30px 0;
+        &:last-child {
+            margin-bottom: 0; 
+        }
+    }
+    &__link {
+        color: $color;
+    }
+}

@@ -1,0 +1,19 @@
+$text: #0a0c11;
+$background: #f2f8fb;
+$color: #2e9797;
+$colorAccent: #ff7a2e;
+
+$fontSize: 20;
+$fontFamily: 'Muli', sans-serif;
+$fontFamilySecondary: 'Short Stack', cursive;
+$fontFamilyAccent: 'Zilla Slab Highlight', cursive;
+
+@mixin heading($fontSizeHeading) { 
+    font-family: $fontFamilySecondary;
+    font-size: ($fontSizeHeading / 10) * 1rem;    
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}

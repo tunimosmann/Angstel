@@ -1,0 +1,295 @@
+/* Landscape phones */
+@media (min-width: 480px) {
+    .header {
+        height: 80vh;
+        &__h1 {
+            font-size: 5.6rem;
+        }
+        &__h2 {
+            font-size: 4.2rem;
+        }
+    }
+    .nav {
+        &__wrapper {
+            justify-content: flex-end;
+            width: 90%;
+        }
+        &__link {
+            font-size: 2rem;
+            padding: 15px;
+            &:last-child {
+                padding-right: 0;
+            }
+        }
+    }   
+    .home,
+    .userEntries,
+    .userJournal,
+    .userList,
+    .about {
+        padding: 50px 0;
+        &__h2 {
+            font-size: 3.6rem;
+        }
+        &__h3 {
+            font-size: 2.8rem;
+        }
+    }
+    .form {
+        &__levels {
+            justify-content: flex-start;
+        }
+    }
+    .button {
+        font-size: 2rem;
+    }
+    .about {
+        padding-top: 0;
+    }
+    .socialmedia {
+        &__link {
+            font-size: 3rem; 
+        }
+    }
+    .moreInfo {
+        &__h3 {
+            font-size: 3rem;
+            margin-top: 30px;
+        }
+        &__h4 {
+            font-size: 1.6rem;
+            margin-top: 20px;
+        }
+        &__imageContainer {
+            width: 20%;
+            margin-top: 30px;
+        }
+        &__textContainer {
+            margin-bottom: 50px;
+        }
+    }
+    .mascot {
+        &__textBubble {
+            width: 75%;
+        }
+        &__text {
+            font-size: 2.8rem;
+            margin-top: 20px;
+        }
+    }
+}
+
+/* Landscape phone to portrait tablet */
+@media (min-width: 768px) {
+    .wrapper {
+        width: 90%;
+    }
+    .header {
+        height: 60vh;
+        &__h2 {
+            margin-top: 50px; 
+        }
+    }
+    .home,
+    .userEntries,
+    .userJournal,
+    .userList,
+    .about {
+        padding: 75px 0;
+    }
+    .button {
+        &:hover {
+            box-shadow: 7px 7px 0 $text;
+        }
+    }
+    .about {
+        padding-top: 0;
+        &__socialmedia {
+            margin-bottom: 50px;
+        }
+    }
+    .socialmedia {
+        &__link {
+            font-size: 3.6rem; 
+        }
+    }
+    .moreInfo {
+        &__h3 {
+            margin-top: 50px;
+        }
+        &__h4 {
+            margin-top: 30px;
+        }
+        &__button {
+            height: 40px;
+        }
+        &__imageContainer {
+            width: 12%;
+            margin-top: 50px;
+        }
+    }
+    .mascot {
+        &__wrapper {
+            width: 85%;
+            padding-top: 30px;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+        }
+        &__textBubble {
+            width: 45%;
+        }
+        &__imageContainer {
+            width: 50%;
+        } 
+        &__text {
+            font-size: 2.4rem;
+            margin-top: 25px;
+            width: 85%;
+        }       
+    }
+}
+
+/* Portrait tablet and small desktops */
+@media (min-width: 940px) {
+    .wrapper {
+        width: 80%;
+    }
+    body {
+        font-size: 2.4rem;
+    }
+    .header {
+        &__h1 {
+            font-size: 8rem;
+        }
+        &__h2 {
+            font-size: 5rem;
+        }
+    }
+    .home,
+    .userEntries,
+    .userJournal,
+    .userList,
+    .about {
+        padding: 100px 0;
+        &__h2 {
+            font-size: 4rem;
+            text-align: left;
+        }
+        &__h3 {
+            font-size: 3.2rem;
+            text-align: left;
+        }
+    }
+    .userJournal {
+        &__h3 {
+            font-size: 2.8rem;
+        }
+    }
+    .userList {
+        &__list {
+            padding: 20px 0;
+        }
+        &__item {
+            margin-top: 30px;
+            &--taskCompleted {
+                margin-top: 30px;
+                opacity: 0.5;
+            }
+            &--color {
+                color: $color;
+            }
+        }
+    } 
+    .form {
+        &__h2 {
+            font-size: 4rem;
+            text-align: left;
+        }
+        &__field {
+        margin: 10px 0 30px 0;
+        background: $colorAccent;
+        border: none;
+        }
+    }
+    .button {
+        font-size: 2.2rem;
+    }
+    .about {
+        padding-top: 0;
+    }
+    .moreInfo {
+        &__h3 {
+            font-size: 3.4rem;
+            text-align: left;
+        }
+        &__h4 {
+            font-size: 1.8rem;
+        }
+        &__imageContainer {
+            width: 10%;
+        }
+        &__textContainer {
+            margin-bottom: 100px;
+        }
+        &__text {
+            margin-top: 30px;
+        }
+    } 
+    .mascot {
+        &__textBubble {
+            width: 35%;
+        }
+        &__imageContainer {
+            width: 40%;
+        } 
+        &__text {
+            font-size: 2.4rem;
+            margin-top: 15px;
+            width: 85%;
+        }       
+    }     
+}
+
+/* Landscape tablet and laptops*/
+@media (min-width: 1024px) {
+    .about {
+        padding-top: 0;
+        &__socialmedia {
+            margin-bottom: 75px;
+        }
+    }
+    .socialmedia {
+        &__link {
+            font-size: 4rem; 
+        }
+    }
+    .moreInfo {
+        &__h3 {
+            margin-top: 75px;
+        }
+        &__h4 {
+            margin-top: 30px;
+        }
+    }
+    .mascot {
+        &__textBubble {
+            width: 33%;
+        }
+        &__imageContainer {
+            width: 35%;
+        }      
+    } 
+}
+
+/* Landscape tablet and laptops*/
+@media (min-width: 1280px) {
+    .wrapper {
+        width: 70%;
+    }
+    .mascot {
+        &__textBubble {
+            width: 30%;
+        }   
+    } 
+}

@@ -1,0 +1,12 @@
+.socialmedia {
+    &__item:hover .socialmedia__link {
+        color: $colorAccent;
+    }
+    &__link {
+       font-size: 2.4rem; 
+       color: $color;
+       padding: 5px;
+       margin: 0 5px;
+       transition: color 300ms ease-in;
+    }   
+}

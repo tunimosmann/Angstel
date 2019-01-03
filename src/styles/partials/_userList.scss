@@ -1,0 +1,28 @@
+.userList { 
+    width: 100%; 
+    &--empty {
+        display: none;
+    }  
+    &__wrapper {
+        padding: 30px 0;
+    }
+    &__h2 {
+        @include heading(32);
+        &--color {
+            color: $colorAccent;
+        }
+    }
+    &__list {
+        padding: 10px 0 30px 0;
+    }
+    &__item {
+        margin-top: 20px;
+        &--taskCompleted {
+            margin-top: 20px;
+            opacity: 0.5;
+        }
+        &--color {
+            color: $color;
+        }
+    }
+}

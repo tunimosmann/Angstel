@@ -1,0 +1,27 @@
+.footer {
+    width: 100%;
+    padding: 20px 0;
+    background: $text;
+    color: $background;    
+    &__text {
+        font-size: 1.8rem;
+        text-align: center;
+    }
+    &__link {
+        display: block;
+        color: $background;
+        font-size: 1.2rem;
+        margin-top: 5px;
+        text-align: center;
+        &--inline {
+            display: inline;
+            font-size: 1.8rem;
+            color: $color; 
+            margin: 0;
+            transition: color 300ms;
+            &:hover {
+                color: $colorAccent;
+            }
+        }
+    }
+}

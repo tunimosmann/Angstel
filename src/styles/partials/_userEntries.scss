@@ -1,0 +1,29 @@
+.userEntries {
+    background: $color;
+    width: 100%;
+    padding: 50px 0;
+    &__h2{
+        @include heading(30);
+        color: $background;
+        &--color {
+            color: $background;
+            margin-bottom: 30px;
+        }
+    }
+    &__text {
+        margin: 75px auto;
+        &:last-child {
+            margin-bottom: 0; 
+        }
+        &--logOut {
+            margin: 0;
+        }
+    }
+    &__span {
+        color: $background;
+    }
+    &__form {
+        padding: 0;
+        margin: 0;
+    }
+}

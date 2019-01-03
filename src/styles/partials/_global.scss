@@ -1,0 +1,46 @@
+html {
+    font-size: 62.5%;       
+}
+
+body {
+    background: $background;
+    font-size: ($fontSize / 10) * 1rem;    
+    font-family: $fontFamily;
+    color: $text;  
+    font-weight: 400;
+}
+
+p {
+    line-height: 34px;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    color: $text;    
+    text-decoration: none;   
+    padding: 0;     
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+    margin: 0;
+    padding: 0;    
+}
+
+.wrapper {
+    width: 90%;
+    margin: 0 auto;
+}

@@ -1,0 +1,23 @@
+.button {
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;    
+    width: 70%;
+    height: 40px;
+    border: none;
+    font-family: $fontFamily;    
+    text-align: center;
+    font-weight: 700;
+    font-size: 1.8rem;
+    background: $colorAccent;
+    display: block;
+    margin: 0 auto;
+    transition: box-shadow 300ms;
+    &:hover {
+        box-shadow: 5px 5px 0 $text;
+    }
+    &--simple {
+        width: 100%;
+        margin-left: 10px;
+    }
+}
