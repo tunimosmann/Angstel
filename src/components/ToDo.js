@@ -100,31 +100,31 @@ class ToDo extends Component {
                                 <form onSubmit={this.handleSubmit} action="" className="userEntries__form form">
 
                                     <label htmlFor="doable1" className="form__label"><span className="form__span">I can</span>  finish this task:</label>
-                                    <textarea required
+                                    <input required
                                         type="text"
                                         onChange={this.handleChange}
                                         id="doable1"
-                                        className="form__field"
+                                            className="form__field form__field--small"
                                         value={this.state.doable1}
-                                        ></textarea>
+                                        />
 
                                     <label htmlFor="doable2" className="form__label"><span className="form__span">If</span> I'm done with the first task I'll <span className="form__span">focus</span> on doing this:</label>
-                                    <textarea required
+                                    <input required
                                         type="text"
                                         onChange={this.handleChange}
                                         id="doable2"
-                                        className="form__field"
+                                            className="form__field form__field--small"
                                         value={this.state.doable2}
-                                        ></textarea>
+                                        />
 
                                     <label htmlFor="dailyGoal" className="form__label">This task scares me but <span className="form__span">I'll try my best</span> to accomplish it today:</label>
-                                    <textarea required
+                                    <input required
                                         type="text"
                                         onChange={this.handleChange}
                                         id="dailyGoal"
-                                        className="form__field"
+                                            className="form__field form__field--small"
                                         value={this.state.dailyGoal}
-                                        ></textarea>
+                                        />
 
                                     <input type="submit" value="You've got this!" className="form__submit button" />
                                 </form>
