@@ -42,9 +42,6 @@
     .button {
         font-size: 2rem;
     }
-    .about {
-        padding-top: 0;
-    }
     .socialmedia {
         &__link {
             font-size: 3rem; 
@@ -102,7 +99,6 @@
         }
     }
     .about {
-        padding-top: 0;
         &__socialmedia {
             margin-bottom: 50px;
         }
@@ -193,10 +189,6 @@
             margin-top: 30px;
             &--taskCompleted {
                 margin-top: 30px;
-                opacity: 0.5;
-            }
-            &--color {
-                color: $color;
             }
         }
     } 
@@ -207,15 +199,10 @@
         }
         &__field {
         margin: 10px 0 30px 0;
-        background: $colorAccent;
-        border: none;
         }
     }
     .button {
         font-size: 2.2rem;
-    }
-    .about {
-        padding-top: 0;
     }
     .moreInfo {
         &__h3 {
@@ -253,7 +240,6 @@
 /* Landscape tablet and laptops*/
 @media (min-width: 1024px) {
     .about {
-        padding-top: 0;
         &__socialmedia {
             margin-bottom: 75px;
         }

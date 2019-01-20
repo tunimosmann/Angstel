@@ -1,5 +1,6 @@
 .userList { 
     width: 100%; 
+    background: $color;
     &--empty {
         display: none;
     }  
@@ -9,7 +10,7 @@
     &__h2 {
         @include heading(32);
         &--color {
-            color: $colorAccent;
+            color: $background;
         }
     }
     &__list {
@@ -22,7 +23,7 @@
             opacity: 0.5;
         }
         &--color {
-            color: $color;
+            color: $background;
         }
     }
 }

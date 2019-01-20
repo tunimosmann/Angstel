@@ -1,12 +1,11 @@
 .userEntries {
-    background: $color;
+    background: $background;
     width: 100%;
     padding: 50px 0;
     &__h2{
         @include heading(30);
-        color: $background;
-        &--color {
-            color: $background;
+        color: $text;
+        &--margin {
             margin-bottom: 30px;
         }
     }
@@ -20,7 +19,7 @@
         }
     }
     &__span {
-        color: $background;
+        color: $colorAccent;
     }
     &__form {
         padding: 0;

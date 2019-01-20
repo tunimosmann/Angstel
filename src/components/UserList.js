@@ -60,7 +60,7 @@ class UserList extends Component {
         return (
             this.props.dbRef.doable1
             ? (
-            <div className="UserList">
+            <div className="userList">
                 <div className="userList__wrapper wrapper">
                     <h2 className="userList__h2">Things <span className="userList__h2 userList__h2--color">I Can</span> do Today</h2>
 

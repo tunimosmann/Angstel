@@ -11,8 +11,8 @@
         height: 150px;
         margin: 10px 0 20px 0;
         padding: 5px;
-        background: $colorAccent;
-        border: none;
+        background: $background;
+        border: 2px solid $colorAccent;
         font-size: 1.8rem;
         &--small {
             height: 40px;
@@ -26,6 +26,6 @@
         margin-bottom: 20px;
     }
     &__span {
-        color: $background;
+        color: $colorAccent;
     }
 }

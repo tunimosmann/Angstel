@@ -34,7 +34,8 @@ class App extends Component {
       user: null, 
       greetingName: null,
       //Angstl messages
-      message: messages[messageIndex]   
+      message: messages[messageIndex],
+      showHome: "home"   
       }
     }
   //CONSTRUCTOR END
@@ -91,6 +92,20 @@ class App extends Component {
       })
     }   
   }  
+
+  // Home Display
+  // If user is in any other page than home it will not render home message
+  homeDisplay = (event) => {
+    if (event.target.innerText === "Home") {
+      this.setState({
+        showHome: "home"
+      })
+    } else {
+      this.setState({
+        showHome: "home home--hidden"
+      })
+    } 
+  }
   //FUNCTIONS END
 
   // RENDER START
@@ -135,19 +150,19 @@ class App extends Component {
           {/* MENU START */}
           <ul className="nav__wrapper wrapper">
             <li className="nav__item">
-              <Link to="/" className="nav__link">Home</Link>
+              <Link to="/" className="nav__link" onClick={this.homeDisplay}>Home</Link>
             </li>
 
             <li className="nav__item">
-              <Link to="/journal" className="nav__link">Journal</Link>
+              <Link to="/journal" className="nav__link" onClick={this.homeDisplay}>Journal</Link>
             </li>
 
             <li className="nav__item">
-              <Link to="/todo" className="nav__link">To Do</Link>
+              <Link to="/todo" className="nav__link" onClick={this.homeDisplay}>To Do</Link>
             </li>            
 
             <li className="nav__item">
-              <Link to="/about" className="nav__link">About</Link>
+              <Link to="/about" className="nav__link" onClick={this.homeDisplay}>About</Link>
             </li>
           </ul>
           {/* MENU END */}
@@ -157,16 +172,16 @@ class App extends Component {
         {/* MAIN START */}
         <main className="main">
           {/* HOME START */}
-          <section className="home">
+          <section className={this.state.showHome}>
             {
-              this.state.user 
+              this.state.user
               ? (
                 <div className="home__wrapper wrapper">
                       <h2 className="home__h2">It's good to see you, <span className="home__h2 home__h2--color">{this.state.greetingName}</span>!</h2>
 
-                      <p className="home__text">Every day is a new opportunity, but if you're feeling overwhelmed or anxious, don't worry. It's ok to have bad days! Track those feelings in your <Link to="/journal" className="home__link">Anxiety Journal</Link>. </p>
+                      <p className="home__text">Every day is a new opportunity, but if you're feeling overwhelmed or anxious, don't worry. It's ok to have bad days! Track those feelings in your <Link to="/journal" className="home__link" onClick={this.homeDisplay}>Anxiety Journal</Link>. </p>
 
-                  <p className="home__text">Now let's do our best and rock that <Link to="/todo" className="home__link">To Do List</Link>!</p>
+                      <p className="home__text">Now let's do our best and rock that <Link to="/todo" className="home__link" onClick={this.homeDisplay}>To Do List</Link>!</p>
                 </div>
               ) 
               : (
@@ -201,6 +216,8 @@ class App extends Component {
           {/* ABOUT START */}
           <Route path="/about" component={About}/>
           {/* ABOUT END */}
+
+          {/* <Route path='*' component={NotFound}/> */}
 
           {/* MASCOT START */}
           <section className="mascot">
